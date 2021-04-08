@@ -1,0 +1,84 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0 ;
+    padding: 0;
+}
+.main{
+    display : flex;
+    flex-direction : column;
+    height: 100vh;
+    background-color: aquamarine;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#blocQuestions{
+    background-color: rgb(103, 107, 107);
+    /* text-align: center; */
+    /* margin: 0 auto; */
+    padding : 1em;
+    color:white;
+    width:25%;
+    min-width: 250px;
+    height: 180px;
+    border-radius: 6px;
+    margin : 10px;
+}
+input{
+    margin: 4px;
+}
+
+button{
+    padding : 5px;
+    margin : 0 20% 0 20%;
+    margin-top: 15px;
+}
+
+.myFormDiv{
+    margin : 0 10%;
+
+    text-align:  left;
+}
+.questionDiv{
+    margin : 0 10%;
+    margin-bottom: 10px;
+    text-align:  left;
+}
+
+.animateBloc{
+    animation: grow 300ms ease-out;
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(0.2) translate(0,-100px);
+    
+  }
+
+  100% {
+    transform: scale(1) translateY(0, 0);
+    
+  }
+}
+
+.popup {
+    visibility : hidden;
+    position : absolute;
+    text-align: center;
+    padding :15px;
+    top : 50%;
+    left : calc(50% - 80px);
+    width : 160px;
+    /* height: 50px; */
+    border-radius: 6px;
+    background-color: #191919;
+    
+    
+}
+
+.show {
+    visibility : visible;
+}
+
+
