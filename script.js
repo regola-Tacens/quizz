@@ -1,5 +1,5 @@
 let givenAnswers =[]
-let rightAnswers =['réponse1','eric', 'garagiste', 'homme politique']
+let rightAnswers =['sphérique','pablo', 'garagiste', 'homme politique']
 let questionIndex = 0
 let questions = [
     ['Quel était le prénom de Picasso ?', 'pierre', 'eric', 'pablo'],
@@ -10,6 +10,7 @@ let questions = [
 let nextQuestion
 let score = 0
 let initialState = true
+console.log('intialState', initialState)
 
 
 let mainDiv = document.createElement('div')
@@ -58,7 +59,7 @@ const addQuestion = ()=>{
         result()
     } 
     if(initialState) {
-        nextQuestion = new Question ('premiere question', 'réponse1', 'réponse 2', 'réponse 3') 
+        nextQuestion = new Question ('la terre est', 'triangulaire', 'carrée', 'sphérique') 
         initialState = false
 
     } else if (!initialState && questionIndex !== questions.length) {
